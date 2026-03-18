@@ -1,0 +1,13 @@
+Database:
+
+A database is a collection of organized and related data.
+It acts as a container for all data-related objects, such as tables, indexes, stored procedures, views, and schemas.
+It can contain multiple schemas, which are used to organize database objects.
+It is a top-level entity that stores and manages information in a database management system (DBMS).
+
+Schema:
+
+A schema is a logical container for database objects, such as tables, views, stored procedures, etc.
+It is used to organize and segment objects within a database.
+Multiple schemas can exist within a single database, allowing the separation of objects and the application of specific permissions to each schema.
+It is a lower-level structure relative to the database.

@@ -1,0 +1,14 @@
+create table tabelaprodutos (
+  ID_PRODUTO INT PRIMARY KEY,
+  NOME_DO_PRODUTO VARCHAR (250),
+  DESCRICAO TEXT,
+  CATEGORIA INT,
+  PRECO_DE_COMPRA DECIMAL (10, 2),
+  UNIDADE VARCHAR (50),
+  FORNECEDOR INT,
+  DATA_DE_INCLUSAO DATE,
+  FOREIGN KEY (CATEGORIA) REFERENCES tabelacategorias (id_categoria),
+  FOREIGN key (FORNECEDOR) REFERENCES tabelafornecedores (id)
+);
+
+ALTER TABLE produtos ADD COLUMN fk_fornecedor INTEGER REFERENCES tabelafornecedores(id);

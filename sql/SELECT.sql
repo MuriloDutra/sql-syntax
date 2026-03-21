@@ -25,3 +25,15 @@ SELECT * from tabelapedidos WHERE NOT status = 'Pendente';
 SELECT * from tabelapedidos where data_de_envio_es BETWEEN '2023-08-01' and '2023-09-01';
 
 SELECT informacoes_de_contato AS email FROM tabelaclientes;
+
+/*LIMIT and OFFSET*/
+
+SELECT * from HistoricoEmprego ORDER BY salario DESC LIMIT 5;
+
+SELECT * from HistoricoEmprego ORDER BY salario DESC LIMIT 5 OFFSET 5;
+
+/*ISNULL and NOTNULL*/
+
+SELECT * from HistoricoEmprego WHERE datatermino ISNULL ORDER BY salario DESC LIMIT 5;
+
+SELECT * from HistoricoEmprego WHERE datatermino NOTNULL ORDER BY salario DESC LIMIT 5;

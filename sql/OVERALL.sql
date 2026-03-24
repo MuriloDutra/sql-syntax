@@ -19,19 +19,19 @@ INSERT INTO funcionarios_da_empresa (
  (9,  'Brenda Cardoso',  'TI',  8853.34),
  (10,  'Danilo Souza',  'TI',  8242.14);
 
-SELECT * from funcionarios_da_empresa;
+SELECT * FROM funcionarios_da_empresa;
 
-SELECT nome from funcionarios_da_empresa WHERE departamento = 'Vendas';
+SELECT nome FROM funcionarios_da_empresa WHERE departamento = 'Vendas';
 
-SELECT * from funcionarios_da_empresa WHERE salario > 5000;
+SELECT * FROM funcionarios_da_empresa WHERE salario > 5000;
 
-SELECT DISTINCT departamento from funcionarios_da_empresa;
+SELECT DISTINCT departamento FROM funcionarios_da_empresa;
 
 UPDATE funcionarios_da_empresa set salario = 7500 WHERE departamento = 'TI';
 
 DELETE FROM funcionarios_da_empresa WHERE salario < 4000;
 
-SELECT nome, salario from funcionarios_da_empresa WHERE departamento = 'Vendas' and salario >= 6000;
+SELECT nome, salario FROM funcionarios_da_empresa WHERE departamento = 'Vendas' and salario >= 6000;
 
 CREATE TABLE projetos (
 	id_projeto int PRIMARY KEY,
@@ -47,6 +47,6 @@ INSERT INTO projetos (
 (2, 'Back End', 10),
 (3, 'Marketing', 6);
 
-SELECT * from projetos WHERE id_gerente = 6;
+SELECT * FROM projetos WHERE id_gerente = 6;
 
 DROP TABLE funcionarios_da_empresa;

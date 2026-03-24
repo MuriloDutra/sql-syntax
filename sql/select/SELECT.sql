@@ -18,7 +18,7 @@ SELECT * FROM Produtos WHERE Nome LIKE 'computador';
 
 SELECT * FROM tabelapedidos WHERE NOT status = 'Pendente';
 
-SELECT * FROM tabelapedidos where data_de_envio_es BETWEEN '2023-08-01' AND '2023-09-01';
+SELECT * FROM tabelapedidos WHERE data_de_envio_es BETWEEN '2023-08-01' AND '2023-09-01';
 
 SELECT informacoes_de_contato AS email FROM tabelaclientes;
 

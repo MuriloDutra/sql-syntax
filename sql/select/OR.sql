@@ -1,3 +1,3 @@
-SELECT * from HistoricoEmprego WHERE cargo = 'Oftalmologista' OR cargo = 'Dermatologista';
+SELECT * FROM HistoricoEmprego WHERE cargo = 'Oftalmologista' OR cargo = 'Dermatologista';
 
-SELECT * from tabelapedidos WHERE status = 'Processando' OR status = 'Pendente';
+SELECT * FROM tabelapedidos WHERE status = 'Processando' OR status = 'Pendente';

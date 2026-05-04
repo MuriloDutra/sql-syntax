@@ -11,7 +11,9 @@ CREATE TABLE tabelaclientes (
 CREATE TABLE Pedidos (
   PedidoID INT PRIMARY KEY,
   ClienteID INT,
-  Descricao VARCHAR(100),
+  /* DEFAULT 'Pedido sem descrição' é um valor padrão que será atribuído à coluna Descricao se não for informado um valor para ela. */
+  Descricao VARCHAR(100) DEFAULT 'Pedido sem descrição',
+  /* ON DELETE CASCADE é uma restrição que permite que a linha seja deletada se a linha da tabela Cliente for deletada. */
   FOREIGN KEY (ClienteID) REFERENCES Clientes(ID) ON DELETE CASCADE
 );
 
